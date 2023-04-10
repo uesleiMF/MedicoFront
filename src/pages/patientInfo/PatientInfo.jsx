@@ -16,7 +16,7 @@ const PatientInfo = () => {
     const fetchPatient = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/patientauth/patientInfo/${path}`
+          `https://medicoback.onrender.com/patientauth/patientInfo/${path}`
         );
         setPatient(res.data);
         setPhone(res.data.phoneNo);
@@ -29,7 +29,7 @@ const PatientInfo = () => {
     e.preventDefault();
     setError(false);
     try {
-      await axios.put(`http://localhost:5000/patientauth/update/${path}`, {
+      await axios.put(`https://medicoback.onrender.com/patientauth/update/${path}`, {
         phoneNo: phone,
       });
 

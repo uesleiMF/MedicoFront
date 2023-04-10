@@ -20,7 +20,7 @@ const DoctorSignup = () => {
     setError(false);
     setErrorMsg("");
     try {
-      const res = await axios.post("http://localhost:5000/doctor/register", {
+      const res = await axios.post("https://medicoback.onrender.com/doctor/register", {
         firstName,
         lastName,
         email,

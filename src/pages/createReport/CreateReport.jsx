@@ -22,7 +22,7 @@ const CreateReport = () => {
     console.log("clicked");
     try {
       const res = await axios.post(
-        `http://localhost:5000/patients/${path}/create_report`,
+        `https://medicoback.onrender.com/${path}/create_report`,
         {
           firstName: firstNameRef.current.value,
           lastName: lastNameRef.current.value,

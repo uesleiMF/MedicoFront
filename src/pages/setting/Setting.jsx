@@ -17,7 +17,7 @@ const Setting = () => {
     setError(false);
     try {
       const res = await axios.put(
-        `http://localhost:5000/doctor/update/${doctor._id}`,
+        `https://medicoback.onrender.com/doctor/update/${doctor._id}`,
         {
           doctorId: doctor._id,
           email,

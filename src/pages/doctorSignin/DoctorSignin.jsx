@@ -17,7 +17,7 @@ const DoctorSignin = () => {
     setError(false);
     dispatch({ type: "LOGIN_START" });
     try {
-      const res = await axios.post("http://localhost:5000/doctor/login", {
+      const res = await axios.post("https://medicoback.onrender.com/doctor/login", {
         email: doctorEmailRef.current.value,
         password: passwordRef.current.value,
       });
